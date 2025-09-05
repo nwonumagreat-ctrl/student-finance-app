@@ -23,7 +23,7 @@ if 'weekly_spending' not in st.session_state:
     st.session_state.weekly_spending = {}
 
 # Base URL for your Flask API
-FLASK_API_URL = https://student-finance-app.onrender.com/
+FLASK_API_URL = "https://student-finance-app.onrender.com"
 
 # --- Main Sections ---
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
@@ -224,6 +224,7 @@ with tab5:
             st.session_state.challenge = None
             st.session_state.weekly_spending = {}
             st.info("Challenge abandoned. You can start a new one anytime.")
+
 
 
 
